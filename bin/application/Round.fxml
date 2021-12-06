@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RoundController">
+   <children>
+      <TableView fx:id="roundTable" layoutX="6.0" layoutY="139.0" prefHeight="359.0" prefWidth="674.0">
+         <columns>
+            <TableColumn fx:id="idCOL" prefWidth="75.0" text="№" />
+            <TableColumn fx:id="nameCOL" prefWidth="107.0" text="Name" />
+            <TableColumn fx:id="startLocationCOL" prefWidth="107.0" text="Start location" />
+            <TableColumn fx:id="endLocationCOL" prefWidth="99.0" text="End location" />
+            <TableColumn fx:id="timeInWayCOL" prefWidth="114.0" text="Time in way" />
+         </columns>
+      </TableView>
+      <Pane layoutX="-7.0" layoutY="56.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="4.0" prefWidth="704.0" style="-fx-background-color: #000000;" AnchorPane.rightAnchor="-2.0" />
+      <Label layoutX="29.0" layoutY="14.0" prefHeight="30.0" prefWidth="318.0" text="Round details">
+         <font>
+            <Font name="Bauhaus 93" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="add" layoutX="14.0" layoutY="73.0" onMouseClicked="#addClick" prefHeight="42.0" prefWidth="44.0">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/addico.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label fx:id="rem" layoutX="615.0" layoutY="73.0" onMouseClicked="#remClick" prefHeight="55.0" prefWidth="64.0">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/trashcan.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label fx:id="update" layoutX="77.0" layoutY="73.0" onMouseClicked="#updateClick" prefHeight="55.0" prefWidth="55.0">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/updateico.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label fx:id="revork" layoutX="140.0" layoutY="73.0" onMouseClicked="#revorkClick" prefHeight="55.0" prefWidth="42.0">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/revorkico.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>

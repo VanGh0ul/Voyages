@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="522.0" style="-fx-background-color: #6A00FF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.addDriversController">
+   <children>
+      <HBox layoutX="6.0" layoutY="328.0" prefHeight="50.0" prefWidth="522.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label prefHeight="17.0" prefWidth="176.0" text="Phone" textFill="#3cff00">
+               <font>
+                  <Font name="Century Gothic" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="phoneFIL" prefHeight="35.0" prefWidth="300.0">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="6.0" layoutY="278.0" prefHeight="50.0" prefWidth="522.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label prefHeight="17.0" prefWidth="176.0" text="Address" textFill="#3cff00">
+               <font>
+                  <Font name="Century Gothic" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="addressFIL" prefHeight="35.0" prefWidth="300.0">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="6.0" layoutY="128.0" prefHeight="50.0" prefWidth="522.0">
+         <children>
+            <Label prefHeight="32.0" prefWidth="176.0" text="First name" textFill="#3cff00">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Century Gothic" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstNameFIL" prefHeight="35.0" prefWidth="300.0">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </TextField>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox layoutX="6.0" layoutY="178.0" prefHeight="50.0" prefWidth="522.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label prefHeight="32.0" prefWidth="176.0" text="Middle name" textFill="#3cff00">
+               <font>
+                  <Font name="Century Gothic" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="middleNameFIL" prefHeight="35.0" prefWidth="300.0">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="6.0" layoutY="228.0" prefHeight="50.0" prefWidth="522.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label prefHeight="17.0" prefWidth="176.0" text="Last name" textFill="#3cff00">
+               <font>
+                  <Font name="Century Gothic" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastNameFIL" prefHeight="35.0" prefWidth="300.0">
+               <font>
+                  <Font name="Century Gothic" size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" prefHeight="100.0" prefWidth="405.0">
+         <children>
+            <Label prefHeight="75.0" prefWidth="259.0" style="-fx-background-color: #E3F2FD;" text="Drivers Details">
+               <font>
+                  <Font name="Bauhaus 93" size="35.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="15.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="389.0" prefHeight="176.0" prefWidth="522.0">
+         <children>
+            <JFXButton fx:id="saveB" onMouseClicked="#save" prefHeight="63.0" prefWidth="171.0" style="-fx-background-color: #76FF03;" text="Save">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Century Gothic" size="28.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="cleanB" layoutX="186.0" layoutY="24.0" onMouseClicked="#clean" prefHeight="63.0" prefWidth="171.0" style="-fx-background-color: #76FF03;" text="Clean">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Century Gothic" size="28.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
